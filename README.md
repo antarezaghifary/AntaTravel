@@ -8,4 +8,5 @@ Kelas : XIRPL5<br>
 Absen : 10<br>
 1.<br>
 Welcome<br>
-![alt text](https://raw.githubusercontent.com/antarezaghifary/AntaTravel/Touring/gambar/Apps/dash_admin.png)
+![alt text](https://raw.githubusercontent.com/antarezaghifary/AntaTravel/Touring/gambar/Apps/dash_admin.PNG)
+<br>
