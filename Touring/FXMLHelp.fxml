@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="867.0" style="-fx-background-color: #d0d2d4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Touring.FXMLHelpController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="584.0" prefWidth="841.0" style="-fx-background-color: #45a9c0;">
+         <children>
+            <Pane layoutX="39.0" layoutY="92.0" prefHeight="435.0" prefWidth="774.0" style="-fx-background-color: #1b435d; -fx-background-radius: 50;">
+               <children>
+                  <ImageView fitHeight="427.0" fitWidth="774.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-border: 40;;">
+                     <image>
+                        <Image url="@gambar/firewatch_5.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="25.0" layoutY="246.0" text="4. Segera lunasi pembayaran anda dan jangan lupa simpan ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="213.0" text="3. Jangan lupa foto atau sceenshoot untuk data anda supaya tidak hilang atau untuk cadangan">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="178.0" text="2. Pastikan anda sudah terdaftar sebagai owner">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="140.0" text="1. Sebelum melakukan transaksi mohon anda cek dahulu data yang sudah anda masukkan di dalam aplikasi ini.">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="307.0" layoutY="45.0" text="NEED HELP!!">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="id_back1" layoutX="43.0" layoutY="339.0" onAction="#back1" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #009ea4; -fx-border-color: #d96e27; -fx-border-radius: 10; -fx-background-radius: 10;" text="   BACK" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIconView fill="WHITE" glyphName="REPLY_ALL" layoutX="43.0" layoutY="368.0" size="25" />
+                  <ImageView fitHeight="87.0" fitWidth="150.0" layoutX="612.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gambar/anta-tour.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="53.0" layoutY="84.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

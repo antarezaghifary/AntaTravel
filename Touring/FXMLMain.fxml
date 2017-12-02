@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Touring.FXMLMainController">
+   <children>
+      <Pane layoutX="217.0" layoutY="8.0" prefHeight="610.0" prefWidth="743.0" style="-fx-background-color: #bbbdbf; -fx-background-radius: 10,10,10,10;;">
+         <children>
+            <Pane layoutX="9.0" layoutY="6.0" prefHeight="594.0" prefWidth="728.0" style="-fx-background-radius: 5,5,5,5; -fx-background-color: white;">
+               <children>
+                  <JFXTextArea fx:id="nama2" layoutX="28.0" layoutY="58.0" maxWidth="277.0" minWidth="218.0" prefHeight="25.0" prefWidth="277.0" promptText="masukkan nama" />
+                  <JFXTextArea fx:id="alamat" layoutX="28.0" layoutY="98.0" maxWidth="277.0" minWidth="218.0" prefHeight="25.0" prefWidth="277.0" promptText="masukkan alamat" />
+                  <JFXTextArea fx:id="umur" layoutX="28.0" layoutY="139.0" maxWidth="277.0" minWidth="218.0" prefHeight="25.0" prefWidth="277.0" promptText="masukkan umur" />
+                  <JFXDatePicker fx:id="tgl" layoutX="24.0" layoutY="279.0" prefHeight="31.0" prefWidth="277.0" promptText="tanggal" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="538.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gambar/boy-4.png" />
+                     </image>
+                  </ImageView>
+                  <RadioButton fx:id="id_lk" layoutX="29.0" layoutY="197.0" mnemonicParsing="false" text="Laki-Laki">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="huwa" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="id_pr" layoutX="139.0" layoutY="198.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$huwa">
+                     <font>
+                        <Font size="15.0" />
+                     </font></RadioButton>
+                  <ImageView fitHeight="41.0" fitWidth="39.0" layoutX="540.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gambar/instagram_PNG10.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="590.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gambar/whatsapp-logo-8AE44BBBB0-seeklogo.com.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="642.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gambar/twitter.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="556.0" layoutY="172.0" prefHeight="1.0" prefWidth="114.0" />
+                  <JFXComboBox fx:id="paket" layoutX="31.0" layoutY="366.0" prefHeight="25.0" prefWidth="268.0" promptText="pilih salah satu" />
+                  <JFXButton fx:id="id_book" layoutX="553.0" layoutY="244.0" onAction="#booking" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: #009143; -fx-background-radius: 5; -fx-shape: 3; -fx-border-color: #d96e27; -fx-border-radius: 5;" text="    Booking" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="id_help" layoutX="552.0" layoutY="313.0" onAction="#help" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: #26a6d1; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #d96e27;" text="   Need Help" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="168.0" layoutY="10.0" text="ANTA TRAVEL" textFill="#009ea4">
+                     <font>
+                        <Font name="System Bold Italic" size="27.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="tlp" layoutX="26.0" layoutY="327.0" maxWidth="277.0" minWidth="154.0" prefHeight="31.0" prefWidth="277.0" promptText="no.tlp" />
+                  <CheckBox fx:id="j1" layoutX="24.0" layoutY="424.0" mnemonicParsing="false" text="06.00">
+                     <font>
+                        <Font size="13.0" />
+                     </font></CheckBox>
+                  <CheckBox fx:id="j2" layoutX="128.0" layoutY="423.0" mnemonicParsing="false" text="09.00">
+                     <font>
+                        <Font size="13.0" />
+                     </font></CheckBox>
+                  <CheckBox fx:id="j3" layoutX="233.0" layoutY="423.0" mnemonicParsing="false" text="12.00">
+                     <font>
+                        <Font size="13.0" />
+                     </font></CheckBox>
+                  <CheckBox fx:id="j4" layoutX="325.0" layoutY="423.0" mnemonicParsing="false" text="16.00">
+                     <font>
+                        <Font size="13.0" />
+                     </font></CheckBox>
+                  <Separator layoutX="165.0" layoutY="45.0" prefHeight="3.0" prefWidth="181.0" style="-fx-background-color: black;" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="TICKET" layoutX="559.0" layoutY="272.0" size="25" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" layoutX="561.0" layoutY="340.0" size="25" />
+                  <Label layoutX="28.0" layoutY="400.0" text="Pilih Salah Satu" textFill="#009ea4">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <JFXTextField fx:id="uang" layoutX="22.0" layoutY="535.0" maxWidth="285.0" minWidth="218.0" prefHeight="31.0" prefWidth="285.0" promptText="masukkan uang" />
+                  <JFXComboBox fx:id="harga" layoutX="29.0" layoutY="457.0" prefHeight="25.0" prefWidth="268.0" promptText="pilih salah satu" />
+                  <JFXComboBox fx:id="kendaraan" layoutX="31.0" layoutY="497.0" prefHeight="25.0" prefWidth="268.0" promptText="pilihan mobil" />
+                  <JFXComboBox fx:id="tujuan" layoutX="31.0" layoutY="238.0" prefHeight="25.0" prefWidth="268.0" promptText="pilih tujuan" />
+                  <JFXButton fx:id="id_lihat" layoutX="548.0" layoutY="381.0" onAction="#lihat" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: orange; -fx-background-radius: 5; -fx-border-color: #d96e27; -fx-border-radius: 5;" text="  View Data" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DESKTOP" layoutX="551.0" layoutY="409.0" size="16" text="" />
+                  <ImageView fitHeight="64.0" fitWidth="106.0" layoutX="559.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gambar/anta-tour.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="20.0" prefHeight="588.0" prefWidth="226.0" style="-fx-background-color: #009ea4;">
+         <children>
+            <Label layoutX="60.0" layoutY="55.0" text="Nama Lengkap" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="97.0" text="Alamat" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="143.0" text="Umur" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="187.0" text="Jenis Kelamin" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="234.0" text="Tujuan" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="452.0" text="Harga" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="495.0" text="Kendaraan" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="277.0" text="Tanggal Berangkat" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="371.0" text="Pilih Paket" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="410.0" text="Jam" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="ANDROID" layoutX="29.0" layoutY="73.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LOCATION_ARROW" layoutX="29.0" layoutY="118.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="ODNOKLASSNIKI" layoutX="28.0" layoutY="206.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="BIRTHDAY_CAKE" layoutX="25.0" layoutY="161.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="COMPASS" layoutX="26.0" layoutY="256.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_CHECK_ALT" layoutX="26.0" layoutY="298.0" size="25" />
+            <Label layoutX="59.0" layoutY="327.0" text="No. Tlp" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="PHONE_SQUARE" layoutX="27.0" layoutY="349.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LIST" layoutX="26.0" layoutY="394.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOCK_ALT" layoutX="27.0" layoutY="432.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CC_VISA" layoutX="21.0" layoutY="474.0" size="25" />
+            <FontAwesomeIconView fill="WHITE" glyphName="TAXI" layoutX="23.0" layoutY="516.0" size="25" />
+            <Label layoutX="61.0" layoutY="534.0" text="Uang Anda" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="MONEY" layoutX="23.0" layoutY="555.0" size="25" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

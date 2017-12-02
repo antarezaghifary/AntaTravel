@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="1111.0" style="-fx-background-color: #009ea4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Touring.FXMLOutputController">
+   <children>
+      <Pane layoutX="28.0" layoutY="53.0" prefHeight="519.0" prefWidth="1064.0" style="-fx-background-color: black; -fx-opacity: 100%; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="452.0" layoutY="17.0" text="ANTA TOUR'S" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="421.0" layoutY="51.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <JFXButton fx:id="id_print" layoutX="456.0" layoutY="453.0" onAction="#print" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: yellow; -fx-border-radius: 10; -fx-border-color: #dd5044; -fx-background-radius: 10;" text="Print">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="id_update" layoutX="275.0" layoutY="453.0" onAction="#update" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: yellow; -fx-border-color: green; -fx-border-radius: 10; -fx-background-radius: 10;" text="Update">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tabel" layoutX="4.0" layoutY="70.0" prefHeight="362.0" prefWidth="1055.0">
+              <columns>
+                <TableColumn fx:id="nama1" prefWidth="105.0" text="NAMA" />
+                  <TableColumn fx:id="alamat1" prefWidth="138.0" text="ALAMAT" />
+                  <TableColumn fx:id="tujuan1" prefWidth="128.0" text="TUJUAN" />
+                  <TableColumn fx:id="tgl1" prefWidth="119.0" text="PEMBERANGKATAN" />
+                  <TableColumn fx:id="tlp1" prefWidth="120.0" text="TELEPON" />
+                  <TableColumn fx:id="paket1" prefWidth="100.0" text="PAKET" />
+                  <TableColumn fx:id="jam" prefWidth="90.0" text="JAM" />
+                  <TableColumn fx:id="harga1" prefWidth="88.0" text="Harga" />
+                  <TableColumn fx:id="kendaraan1" prefWidth="90.0" text="Kendaraan" />
+                  <TableColumn fx:id="kembali" prefWidth="75.0" text="Kembalian" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="id_exit" layoutX="631.0" layoutY="454.0" onAction="#exit" prefHeight="24.0" prefWidth="114.0" style="-fx-background-color: yellow; -fx-background-radius: 10; -fx-border-color: #3ab5e6; -fx-border-radius: 10;" text="Exit">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="280.0" layoutY="582.0" text="TERIMA KASIH ATAS PENDAFTARAN DAN PEMESANAN TIKET TRAVEL " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="36.0" layoutX="241.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gambar/scania-hitam.png" />
+         </image>
+      </ImageView>
+      <StackPane fx:id="stack" disable="true" prefHeight="629.0" prefWidth="1111.0" />
+      <ImageView fitHeight="53.0" fitWidth="76.0" layoutX="855.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gambar/anta-tour.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
