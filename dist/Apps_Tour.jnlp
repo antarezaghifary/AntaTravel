@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Apps_Tour.jnlp">
+  <information>
+    <title>Apps_Tour</title>
+    <vendor>Skaha_AM</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Apps_Tour.jar" size="4451426" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-all-1.3.0.jar" size="5379925" download="eager" />
+    <jar href="lib\jfoenix-1.0.0.jar" size="2186636" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Apps_Tour" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Touring.Appsrun"  name="Apps_Tour" />
+  <update check="always"/>
+</jnlp>
