@@ -9,4 +9,4 @@ Absen : 10
 
 1. <br>
 Welcome<br>
-![alt text](http://raw.githubusercontent.com/AntaTravel/Touring/gambar/Apps/dash_admin.png)
+![alt text](http://github.com/AntaTravel/Touring/gambar/Apps/dash_admin.png)
