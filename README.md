@@ -6,4 +6,5 @@ Apps ini sangatlah mudah digunakan
 Nama  : Antareza Ghifary A.M<br>
 Kelas : XIRPL5<br>
 Absen : 10<br>
+![alt text](https://raw.githubusercontent.com/antarezaghifary/AntaTravel/master/Touring/gambar/Apps/dash_login.png)
 
